@@ -1,0 +1,131 @@
+{
+  "liblabVersion": "2.0.19",
+  "date": "2024-03-12T11:35:54.433Z",
+  "config": {
+    "usesFormData": false,
+    "authentication": {
+      "access": {
+        "prefix": "Bearer"
+      }
+    },
+    "environmentVariables": [],
+    "fileOutput": "/tmp",
+    "inferServiceNames": false,
+    "httpLibrary": {
+      "name": "axios",
+      "packages": {
+        "axios": "^1.6.7"
+      },
+      "languages": ["typescript"]
+    },
+    "auth": ["bearer"],
+    "baseUrl": "http://localhost:8080",
+    "sdkName": "llama-store",
+    "sdkVersion": "0.0.3",
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "retryDelay": 150
+    },
+    "multiTenant": true,
+    "customQueries": {
+      "paths": [],
+      "rawQueries": [],
+      "queriesData": []
+    },
+    "generateEnv": true,
+    "license": {
+      "type": "MIT"
+    },
+    "deliveryMethod": "zip",
+    "apiId": 543,
+    "liblabVersion": "1",
+    "deliveryMethods": ["zip"],
+    "languages": ["csharp"],
+    "specFilePath": "spec.json",
+    "createDocs": true,
+    "languageOptions": {
+      "csharp": {
+        "githubRepoName": "llama-store-sdk-csharp",
+        "sdkVersion": "0.0.3"
+      },
+      "go": {
+        "goModuleName": "github.com/liblaber/llama-store-sdk-go",
+        "githubRepoName": "llama-store-sdk-go",
+        "sdkVersion": "0.0.3"
+      },
+      "java": {
+        "groupId": "com.liblab",
+        "githubRepoName": "llama-store-sdk-java",
+        "sdkVersion": "0.0.3"
+      },
+      "python": {
+        "alwaysInitializeOptionals": true,
+        "pypiPackageName": "LlamaStore",
+        "githubRepoName": "llama-store-sdk-python",
+        "sdkVersion": "0.0.3"
+      },
+      "typescript": {
+        "bundle": true,
+        "exportClassDefault": true,
+        "httpClient": "axios",
+        "githubRepoName": "llama-store-sdk-typescript",
+        "sdkVersion": "0.0.3"
+      }
+    },
+    "publishing": {
+      "githubOrg": "liblaber"
+    },
+    "includeOptionalSnippetParameters": true,
+    "devContainer": true,
+    "responseHeaders": false,
+    "hooksLocation": {
+      "bucketKey": "4219/hooks.zip",
+      "bucketName": "prod-liblab-api-stack-hooks"
+    },
+    "specUrl": "https://prod-liblab-api-stack-specs.s3.us-east-1.amazonaws.com/543/open-api-spec.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA5P3QKKDKGVNIJ2H7%2F20240312%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240312T113550Z&X-Amz-Expires=43200&X-Amz-Signature=94c158df10403a8cff7cd1487b71a04fe6047605e5c8bb5bb1acb5e47834ba42&X-Amz-SignedHeaders=host&x-id=GetObject",
+    "githubRepoName": "llama-store-sdk-csharp",
+    "language": "csharp",
+    "hooks": {
+      "enabled": true,
+      "sourceDir": "/tmp/resources/hooks"
+    }
+  },
+  "files": [
+    "LlamaStore/LlamaStore.csproj",
+    "install.sh",
+    "LlamaStore/Services/BaseService.cs",
+    "LlamaStore/Services/TokenService.cs",
+    "LlamaStore/Hooks/IHook.cs",
+    "LlamaStore/Hooks/CustomHook.cs",
+    "LlamaStore/Http/Handlers/HookHandler.cs",
+    "LlamaStore/Models/ValueEnum.cs",
+    "LlamaStore/Json/ValueEnumJsonConverter.cs",
+    "LlamaStore/Json/ValueEnumJsonConverterFactory.cs",
+    "LlamaStore/Http/Handlers/TokenHandler.cs",
+    "Example/Example.csproj",
+    "Example/Program.cs",
+    "Example/.gitignore",
+    "LlamaStore/Http/Serialization/SerializationStyle.cs",
+    "LlamaStore/Http/Serialization/QuerySerializationStyle.cs",
+    "LlamaStore/Http/Serialization/PathSerializationStyle.cs",
+    "LlamaStore/Http/Serialization/Serializer.cs",
+    "LlamaStore/Http/RequestBuilder.cs",
+    "LlamaStore/Http/Environment.cs",
+    "LlamaStore/LlamaStoreClient.cs",
+    "LlamaStore/Http/Handlers/RetryHandler.cs",
+    "LlamaStore/.gitignore",
+    "LlamaStore/Services/UserService.cs",
+    "LlamaStore/Models/LlamaId.cs",
+    "LlamaStore/Models/Llama.cs",
+    "LlamaStore/Models/LlamaCreate.cs",
+    "LlamaStore/Models/ApiTokenRequest.cs",
+    "LlamaStore/Models/ApiToken.cs",
+    "LlamaStore/Models/User.cs",
+    "LlamaStore/Models/UserRegistration.cs",
+    "LlamaStore/Models/LlamaColor.cs",
+    "LlamaStore/Services/LlamaPictureService.cs",
+    "LlamaStore/Services/LlamaService.cs",
+    "LlamaStore/README.md"
+  ]
+}
